@@ -580,6 +580,11 @@ section .left>.button1>.bottom-text>a:hover {
 
 .data-container h1 {
   font-size: 40px;
+  background-color: #03080a;
+  box-shadow: 0px 5px 5px grey;
+  color: white;
+  border-radius: 15px;
+  padding: 5px 20px;
 }
 
 .edu-data {
@@ -1769,6 +1774,7 @@ footer label textarea::placeholder {
 
   .data-container h1 {
     font-size: 18px;
+    text-decoration: none;
   }
 
   .edu-data p {
