@@ -75,3 +75,32 @@ window.addEventListener("scroll", () => {
         Movetotop.classList.remove("active");
     }
 })
+
+
+window.onload = function() {
+    const imageElements = document.querySelectorAll('.hoverImage');
+    
+    imageElements.forEach(imageElement => {
+      const handleMouseMove = (e) => {
+        let rect = imageElement.getBoundingClientRect();
+        let x = e.clientX - rect.left;
+        let y = e.clientY - rect.top;
+    
+        let dx = (x - rect.width / 2) / (rect.width / 2);
+        let dy = (y - rect.height / 2) / (rect.height / 2);
+    
+        imageElement.style.transform = `perspective(500px) rotateY(${dx * -20}deg) rotateX(${-dy * -20}deg)`;
+      };
+  
+      const handleMouseLeave = () => {
+        imageElement.style.transform = "";
+      };
+  
+      imageElement.addEventListener('mousemove', handleMouseMove);
+      imageElement.addEventListener('mouseleave', handleMouseLeave);
+    });
+  }
+
+  
+
+  

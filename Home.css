@@ -2,7 +2,7 @@ body {
   margin: 0px;
   padding: 0px;
   border: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #000000;
 }
 
@@ -31,9 +31,9 @@ body {
   right: 20px;
   font-size: 18px;
   display: none;
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
   z-index: 20000;
   text-decoration: none;
 }
@@ -62,7 +62,7 @@ header {
   border-bottom: 2px solid #7d7a7a;
 }
 
-.nav-logo>img {
+.nav-logo > img {
   width: 60px;
   height: 60px;
   cursor: pointer;
@@ -81,11 +81,11 @@ header {
   gap: 80px;
 }
 
-.nav-text>li {
+.nav-text > li {
   list-style-type: none;
 }
 
-.nav-text>li>a {
+.nav-text > li > a {
   color: white;
   text-decoration: none;
   font-size: 16px;
@@ -95,8 +95,8 @@ header {
   border-radius: 5px;
 }
 
-.nav-text>li>a:hover,
-.nav-text>li>a.active {
+.nav-text > li > a:hover,
+.nav-text > li > a.active {
   color: #03080a;
   background-color: cyan;
   text-shadow: 2px 2px 15px cyan;
@@ -105,9 +105,6 @@ header {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
-
-
 
 /*----------------------------------------------------->Backgound Design<--------------------------------------------------------*/
 .bg {
@@ -147,12 +144,11 @@ header {
   margin-top: 50px;
 }
 
-.heading>span {
+.heading > span {
   color: #98e7ff;
   font-size: 40px;
   letter-spacing: 2px;
 }
-
 
 /*----------------------------------------------------->scrollbar<--------------------------------------------------------*/
 
@@ -229,8 +225,6 @@ body::-webkit-scrollbar {
   filter: blur(30px);
 }
 
-
-
 /*----------------------------------------------------->Section1<--------------------------------------------------------*/
 section {
   display: -webkit-box;
@@ -262,12 +256,12 @@ section .left {
   justify-content: center;
 }
 
-section .left>.first-text {
+section .left > .first-text {
   font-size: 70px;
   font-weight: 500;
 }
 
-section .left>.line {
+section .left > .line {
   border: 2px solid;
   width: 600px;
   -webkit-box-shadow: 0px 5px 30px cyan;
@@ -276,20 +270,20 @@ section .left>.line {
   border-radius: 5px;
 }
 
-section .left>h1 {
+section .left > h1 {
   font-size: 100px;
   margin-top: 0px;
   margin-bottom: 10px;
   color: cyan;
 }
 
-section .left>.button1>p {
+section .left > .button1 > p {
   font-size: 23px;
   font-weight: 400;
   color: #9e9c9c;
 }
 
-section .left>.button1>.bottom-text {
+section .left > .button1 > .bottom-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,7 +296,7 @@ section .left>.button1>.bottom-text {
   margin-top: 30px;
 }
 
-section .left>.button1>.bottom-text>a {
+section .left > .button1 > .bottom-text > a {
   margin-left: 20px;
   padding: 10px 15px;
   background-color: white;
@@ -315,14 +309,14 @@ section .left>.button1>.bottom-text>a {
   text-decoration: none;
 }
 
-section .left>.button1>.bottom-text>p {
+section .left > .button1 > .bottom-text > p {
   text-decoration: none;
   color: white;
   font-weight: 400;
   font-size: 35px;
 }
 
-section .left>.button1>.bottom-text>a:hover {
+section .left > .button1 > .bottom-text > a:hover {
   background-color: cyan;
   -webkit-box-shadow: 1px 1px 10px cyan;
   box-shadow: 1px 1px 10px cyan;
@@ -331,11 +325,7 @@ section .left>.button1>.bottom-text>a:hover {
   transition: all 0.5s;
 }
 
-
-
-
 /*----------------------------------------------------->Section3<--------------------------------------------------------*/
-
 
 .section3 {
   margin: 50px;
@@ -344,37 +334,45 @@ section .left>.button1>.bottom-text>a:hover {
   flex-wrap: wrap;
 }
 
-.section3>div {
+.section3 > div {
   width: 300px;
-  height: 350px;
+  height: auto;
   border-radius: 15px;
   padding: 10px;
-  box-shadow: 3px 4px 2px cyan;
-  background-color: #09161b;
+  background-color: #000000;
 }
 
-.section3>div>img {
-  width: 300px;
-  height: 200px;
-  border-radius: 15px 15px 0 0;
-  border-bottom: 2px solid white;
-  padding-bottom: 10px;
+.section3 > div > img {
+  position: relative;
+  align-self: stretch;
+  height: 250px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 10px;
+  max-width: 100%;
+  transition: all ease-in-out 0.1s;
 }
 
-.section3>div>h2 {
+.section3 > div > h2 {
   font-size: 24px;
-  font-weight: 400;
-  color: cyan;
+  font-weight: 500;
   padding-left: 5px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 5px;
+  text-align: center;
 }
 
-.section3>div>p {
+.section3 > div > p {
   color: #a8a5a8;
-  padding: 5px;
   text-align: justify;
 }
 
-
+.section3 > div > img:hover + h2, .section3 > div > h2:hover{
+  transition: all ease-in-out 0.4s;
+  background-color: black;
+  color: white;
+}
 
 /*----------------------------------------------------->section4<--------------------------------------------------------*/
 .section4 {
@@ -388,7 +386,7 @@ section .left>.button1>.bottom-text>a:hover {
   margin-top: 100px;
 }
 
-.section4>.im {
+.section4 > .im {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -401,7 +399,7 @@ section .left>.button1>.bottom-text>a:hover {
   justify-content: center;
 }
 
-.section4>.im>.images {
+.section4 > .im > .images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,7 +420,7 @@ section .left>.button1>.bottom-text>a:hover {
   position: relative;
 }
 
-.images>.sub-img {
+.images > .sub-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,13 +438,20 @@ section .left>.button1>.bottom-text>a:hover {
   box-shadow: 2px 2px 5px grey;
 }
 
-.images>.sub-img img {
+.images > .sub-img img {
   width: 100%;
   height: auto;
   z-index: 20000;
 }
 
-.images>a>i {
+.images > .sub-img:hover{
+  transition: all ease-in-out 0.4s;
+  transform: scale(1.4);
+  box-shadow: none;
+  border-radius: 5px;
+}
+
+.images > a > i {
   position: absolute;
   right: 30px;
   bottom: 165px;
@@ -455,58 +460,56 @@ section .left>.button1>.bottom-text>a:hover {
   color: #323131;
 }
 
-.images>.sub-img::-webkit-scrollbar {
+.images > .sub-img::-webkit-scrollbar {
   width: 5px;
 }
 
-.images>.sub-img::-webkit-scrollbar-track {
+.images > .sub-img::-webkit-scrollbar-track {
   background-color: #f1f1f1;
   margin-top: 10px;
   border-top-right-radius: 20px;
 }
 
-.images>.sub-img::-webkit-scrollbar-thumb {
+.images > .sub-img::-webkit-scrollbar-thumb {
   background-color: #3a3939;
   border-radius: 5px;
 }
 
-.images>span {
+.images > span {
   color: black;
   font-size: 20px;
   font-weight: 600;
   margin-top: 20px;
 }
 
-.images>p {
+.images > p {
   color: #323131;
   font-size: 15px;
   height: 100px;
   overflow: auto;
 }
 
-.images>p::-webkit-scrollbar {
+.images > p::-webkit-scrollbar {
   width: 0px;
 }
 
-.images>p::-webkit-scrollbar-track {
+.images > p::-webkit-scrollbar-track {
   background-color: #f1f1f1;
   margin-top: 10px;
   border-top-right-radius: 20px;
 }
 
-.images>p::-webkit-scrollbar-thumb {
+.images > p::-webkit-scrollbar-thumb {
   background-color: #3a3939;
   border-radius: 0px;
 }
 
-.images>a {
+.images > a {
   text-decoration: none;
   color: #251eff;
   margin-top: 10px;
   width: 100px;
 }
-
-
 
 .maincontainer {
   background-color: #fff;
@@ -657,7 +660,6 @@ section .left>.button1>.bottom-text>a:hover {
 }
 
 @-webkit-keyframes move {
-
   0%,
   49.99% {
     opacity: 0;
@@ -672,7 +674,6 @@ section .left>.button1>.bottom-text>a:hover {
 }
 
 @keyframes move {
-
   0%,
   49.99% {
     opacity: 0;
@@ -711,7 +712,13 @@ section .left>.button1>.bottom-text>a:hover {
   background-color: cyan;
   color: white;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#550055), to(cyan));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#550055),
+    to(cyan)
+  );
   background: -o-linear-gradient(left, #550055, cyan);
   background: linear-gradient(to right, #550055, cyan);
   position: relative;
@@ -793,7 +800,6 @@ section .left>.button1>.bottom-text>a:hover {
   transform: translateX(200%);
 }
 
-
 .Skills {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -805,14 +811,14 @@ section .left>.button1>.bottom-text>a:hover {
   padding: 0 200px;
 }
 
-.heading>p {
+.heading > p {
   color: white;
   text-align: center;
   font-size: 15px;
   width: 600px;
 }
 
-.Skills>.container {
+.Skills > .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -849,8 +855,7 @@ section .left>.button1>.bottom-text>a:hover {
   border-radius: 50%;
   border: 15px solid #4d4c51;
   box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.25),
-    0 10px 10px rgba(0, 0, 0, 0.75),
-    0 -2px 2px rgba(255, 255, 255, 0.5),
+    0 10px 10px rgba(0, 0, 0, 0.75), 0 -2px 2px rgba(255, 255, 255, 0.5),
     inset 0 4px 2px rgba(0, 0, 0, 0.25),
     inset 0 -2px 2px rgba(255, 255, 255, 0.5);
 }
@@ -861,7 +866,7 @@ section .left>.button1>.bottom-text>a:hover {
   height: 150px;
   transform: rotate(270deg);
 }
-.circles{
+.circles {
   r: 70;
   cx: 70;
   cy: 70;
@@ -928,19 +933,16 @@ section .left>.button1>.bottom-text>a:hover {
   font-size: 20px;
 }
 
-
-
-
 /*----------------------------------------------------->section5<--------------------------------------------------------*/
 .section5 {
   margin-top: 150px;
 }
 
-.section5>span {
+.section5 > span {
   margin-bottom: 40px;
 }
 
-.section5>p {
+.section5 > p {
   color: #ccc;
   padding: 0px 100px;
   text-align: justify;
@@ -948,7 +950,6 @@ section .left>.button1>.bottom-text>a:hover {
   line-height: 23px;
   letter-spacing: 1px;
 }
-
 
 /*----------------------------------------------------->Footer<--------------------------------------------------------*/
 
@@ -970,7 +971,7 @@ footer {
   gap: 100px;
 }
 
-footer .left>.footer-logo {
+footer .left > .footer-logo {
   background-color: #03080a;
   color: cyan;
   width: 70px;
@@ -993,19 +994,19 @@ footer .left {
   margin-bottom: 30px;
 }
 
-footer .left>.footer-logo>p {
+footer .left > .footer-logo > p {
   font-size: 30px;
-  font-family: 'Lumanosimo', cursive;
+  font-family: "Lumanosimo", cursive;
 }
 
-footer .left>p {
+footer .left > p {
   font-size: 23px;
   font-weight: 500;
   color: #03080a;
   margin-bottom: 50px;
 }
 
-footer .left>.Social {
+footer .left > .Social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1029,7 +1030,7 @@ footer .right {
   font-size: 20px;
 }
 
-footer .right>span {
+footer .right > span {
   font-size: 35px;
   font-weight: 600;
   color: #03080a;
@@ -1042,7 +1043,7 @@ footer .Contact {
   gap: 20px;
 }
 
-footer .Contact>.icons {
+footer .Contact > .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1056,7 +1057,7 @@ footer .Contact>.icons {
   gap: 20px;
 }
 
-footer .Contact>.Detail {
+footer .Contact > .Detail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1166,32 +1167,31 @@ footer label textarea::placeholder {
   border-radius: 50%;
   cursor: pointer;
   -webkit-box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
-    2px 2px 6px rgba(0, 0, 0, 0, .8);
+    2px 2px 6px rgba(0, 0, 0, 0, 0.8);
   box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
-    2px 2px 6px rgba(0, 0, 0, 0, .8);
+    2px 2px 6px rgba(0, 0, 0, 0, 0.8);
 }
 
 .ratethis label .fa:hover {
   -webkit-box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
-    2px 2px 6px rgba(0, 0, 0, 0, .8),
+    2px 2px 6px rgba(0, 0, 0, 0, 0.8),
     inset -2px -2px 10px rgba(255, 255, 255, 0.05),
     inset 2px 2px 10px rgba(0, 0, 0, 0.5);
   box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
-    2px 2px 6px rgba(0, 0, 0, 0, .8),
+    2px 2px 6px rgba(0, 0, 0, 0, 0.8),
     inset -2px -2px 10px rgba(255, 255, 255, 0.05),
     inset 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.ratethis label input:checked~.fa {
+.ratethis label input:checked ~ .fa {
   color: cyan;
   -webkit-box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1),
-    inset 2px 2px 6px rgba(0, 0, 0, 0, .8);
+    inset 2px 2px 6px rgba(0, 0, 0, 0, 0.8);
   box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1),
-    inset 2px 2px 6px rgba(0, 0, 0, 0, .8);
+    inset 2px 2px 6px rgba(0, 0, 0, 0, 0.8);
 }
 
-
-@media screen and (min-width:1440px) {
+@media screen and (min-width: 1440px) {
   .menu-icon {
     display: none;
   }
@@ -1202,9 +1202,8 @@ footer label textarea::placeholder {
 }
 
 /*================================================>Media Screen<=========================================*/
-@media screen and (min-width : 820px) and (max-width : 1120px) {
-
-  .nav-logo>p {
+@media screen and (min-width: 820px) and (max-width: 1120px) {
+  .nav-logo > p {
     font-size: 25px;
   }
 
@@ -1212,7 +1211,7 @@ footer label textarea::placeholder {
     gap: 40px;
   }
 
-  header>button {
+  header > button {
     width: 100px;
     height: 45px;
     font-size: 15px;
@@ -1230,14 +1229,10 @@ footer label textarea::placeholder {
     margin: 100px 10px;
   }
 
-
-
-
   /*----------------------------------------------------->section4<--------------------------------------------------------*/
   .section4 {
     margin-top: 50px;
   }
-
 
   .maincontainer {
     height: 1000px;
@@ -1326,8 +1321,6 @@ footer label textarea::placeholder {
     transform: translateY(200%);
   }
 
-
-
   .Skills {
     padding: 0 100px;
   }
@@ -1337,37 +1330,34 @@ footer label textarea::placeholder {
     margin-top: 100px;
   }
 
-
-
   /*----------------------------------------------------->Footer<--------------------------------------------------------*/
   footer {
     padding: 0 50px;
     gap: 50px;
   }
 
-  footer>.left>p {
+  footer > .left > p {
     font-size: 20px;
   }
 
-  .Social>a>i {
+  .Social > a > i {
     font-size: 30px;
   }
 
-  footer .right>.Contact {
+  footer .right > .Contact {
     font-size: 18px;
   }
 }
 
-
 /*================================================>Media Screen<=========================================*/
-@media screen and (max-width : 820px) {
+@media screen and (max-width: 820px) {
   .Movetotop {
     width: 40px;
     height: 40px;
     font-size: 18px;
   }
 
-  .nav-logo>p {
+  .nav-logo > p {
     font-size: 25px;
   }
 
@@ -1419,12 +1409,12 @@ footer label textarea::placeholder {
     }
   }
 
-  .nav-text>li {
+  .nav-text > li {
     margin-bottom: 50px;
     margin-right: 50px;
   }
 
-  .nav-text>li a {
+  .nav-text > li a {
     text-transform: uppercase;
     color: black;
     padding: 7px 20px;
@@ -1436,7 +1426,7 @@ footer label textarea::placeholder {
     letter-spacing: 2px;
   }
 
-  .nav-text>li a:hover {
+  .nav-text > li a:hover {
     -webkit-transform: scale(2);
     -ms-transform: scale(2);
     transform: scale(2);
@@ -1449,7 +1439,7 @@ footer label textarea::placeholder {
     transition: all ease-in-out 0.3s;
   }
 
-  header>button {
+  header > button {
     display: none;
   }
 
@@ -1468,7 +1458,6 @@ footer label textarea::placeholder {
     color: white;
   }
 
-
   /*----------------------------------------------------->Section1<--------------------------------------------------------*/
   section {
     margin-top: 100px;
@@ -1478,24 +1467,22 @@ footer label textarea::placeholder {
     color: white;
   }
 
-  section .left>.line {
+  section .left > .line {
     width: 450px;
   }
 
-  section .left>h1 {
+  section .left > h1 {
     font-size: 90px;
   }
 
-  section .left>.button1>p {
+  section .left > .button1 > p {
     width: 100%;
   }
 
-  section .left>.button1>.bottom-text>i {
+  section .left > .button1 > .bottom-text > i {
     width: 50px;
     height: 50px;
   }
-
-
 
   /*----------------------------------------------------->Section3<--------------------------------------------------------*/
   .section3 {
@@ -1503,10 +1490,7 @@ footer label textarea::placeholder {
     gap: 50px;
   }
 
-
-
   /*----------------------------------------------------->section5<--------------------------------------------------------*/
-
 
   .maincontainer {
     height: 1000px;
@@ -1588,20 +1572,18 @@ footer label textarea::placeholder {
     -ms-transform: translateY(-200%);
     transform: translateY(-200%);
   }
-  
+
   .maincontainer.active .togggle-right {
     -webkit-transform: translateY(200%);
     -ms-transform: translateY(200%);
     transform: translateY(200%);
   }
 
-
-
   .Skills {
     padding: 0 50px;
   }
 
-  .Skills>p {
+  .Skills > p {
     width: 500px;
   }
 
@@ -1610,11 +1592,11 @@ footer label textarea::placeholder {
     margin-top: 50px;
   }
 
-  .section5>span {
+  .section5 > span {
     margin-bottom: 10px;
   }
 
-  .section5>p {
+  .section5 > p {
     padding: 0px 50px;
   }
 
@@ -1632,36 +1614,33 @@ footer label textarea::placeholder {
     gap: 0px;
   }
 
-  footer>.left {
+  footer > .left {
     margin-top: 40px;
   }
 
-  footer>.left>p {
+  footer > .left > p {
     margin-bottom: 20px;
   }
 
-  footer>.left>p {
+  footer > .left > p {
     font-size: 20px;
   }
 
-  .Social>a>i {
+  .Social > a > i {
     font-size: 30px;
   }
 
-  footer .right>.Contact {
+  footer .right > .Contact {
     font-size: 18px;
   }
 
-
-  .ratethis>p {
+  .ratethis > p {
     font-size: 16px;
   }
 }
 
-
-
 /*================================================>Media Screen<=========================================*/
-@media screen and (max-width : 600px) {
+@media screen and (max-width: 600px) {
   body {
     overflow-x: hidden;
   }
@@ -1671,7 +1650,7 @@ footer label textarea::placeholder {
     height: 80px;
   }
 
-  .nav-logo>img {
+  .nav-logo > img {
     width: 50px;
     height: 50px;
   }
@@ -1681,7 +1660,7 @@ footer label textarea::placeholder {
     width: 100%;
   }
 
-  .nav-text>li>a {
+  .nav-text > li > a {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 500;
@@ -1691,27 +1670,27 @@ footer label textarea::placeholder {
     padding: 0 10px;
   }
 
-  section .left>.first-text {
+  section .left > .first-text {
     font-size: 50px;
     font-weight: 500;
   }
 
-  section .left>.line {
+  section .left > .line {
     width: 320px;
   }
 
-  section .left>h1 {
+  section .left > h1 {
     font-size: 60px;
   }
 
-  section .left>.button1>.bottom-text {
+  section .left > .button1 > .bottom-text {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
 
-  section .left>.button1>.bottom-text>p {
+  section .left > .button1 > .bottom-text > p {
     text-decoration: none;
     color: white;
     font-weight: 400;
@@ -1723,31 +1702,26 @@ footer label textarea::placeholder {
     text-align: center;
   }
 
-  section .left>.button1>.bottom-text>a {
+  section .left > .button1 > .bottom-text > a {
     font-size: 15px;
     padding: 8px 10px;
   }
 
-
-
-  .section2>span {
+  .section2 > span {
     font-size: 30px;
     width: 250px;
     text-align: center;
   }
 
-
   .section3 {
     gap: 0;
   }
 
-  .section3>.margin {
+  .section3 > .margin {
     margin-top: 50px;
   }
 
-
-
-  .section4>.heading>span {
+  .section4 > .heading > span {
     font-size: 30px;
   }
 
@@ -1755,13 +1729,11 @@ footer label textarea::placeholder {
     margin-bottom: 40px;
   }
 
-  .images>.sub-img img {
+  .images > .sub-img img {
     width: 100%;
     height: auto;
     z-index: 20000;
   }
-
-
 
   .maincontainer {
     height: 600px;
@@ -1794,11 +1766,11 @@ footer label textarea::placeholder {
     margin-top: 25px;
   }
 
-  .Education>h1 {
+  .Education > h1 {
     margin-right: 40px;
   }
 
-  .exp-data>p {
+  .exp-data > p {
     border-right: none;
   }
 
@@ -1824,7 +1796,7 @@ footer label textarea::placeholder {
     width: 100%;
   }
 
-  .toggle-pannel>button {
+  .toggle-pannel > button {
     width: 120px;
     height: 30px;
     font-size: 13px;
@@ -1836,21 +1808,19 @@ footer label textarea::placeholder {
     font-size: 13px;
   }
 
-  .edu-data>.d {
+  .edu-data > .d {
     font-size: 10px;
   }
-
-
 
   .Skills {
     padding: 0 10px;
   }
-  
-  .heading>p {
+
+  .heading > p {
     width: 350px;
   }
-  
-  .Skills>.container {
+
+  .Skills > .container {
     justify-content: space-evenly;
     align-content: space-evenly;
     width: 100%;
@@ -1858,22 +1828,22 @@ footer label textarea::placeholder {
     gap: 0px;
     margin-top: 0px;
   }
-  
+
   .container .circle {
     width: 135px;
     height: 135px;
   }
-  
+
   .container .circle::after {
     width: 80px;
     height: 80px;
   }
-  
+
   .container .circle svg {
     width: 130px;
     height: 130px;
   }
-  .circles{
+  .circles {
     r: 60;
     cx: 60;
     cy: 60;
@@ -1884,45 +1854,42 @@ footer label textarea::placeholder {
   .container div {
     font-size: 15px;
   }
-  
-  
 
   .section5 {
     margin-top: 100px;
   }
 
-  .section5>p {
+  .section5 > p {
     padding: 0px 15px;
     text-align: justify;
   }
-
 
   footer {
     padding: 0 15px;
   }
 
-  footer>.left {
+  footer > .left {
     margin-top: 40px;
   }
 
-  footer>.left>p {
+  footer > .left > p {
     margin-bottom: 20px;
   }
 
-  footer>.left>p {
+  footer > .left > p {
     font-size: 20px;
   }
 
-  footer .left>.Social {
+  footer .left > .Social {
     gap: 0px;
   }
 
-  .Social>a>i {
+  .Social > a > i {
     font-size: 30px;
     margin-right: 20px;
   }
 
-  footer .right>.Contact {
+  footer .right > .Contact {
     font-size: 18px;
   }
 
@@ -1933,11 +1900,11 @@ footer label textarea::placeholder {
     gap: 0px;
   }
 
-  footer .Contact>.icons {
+  footer .Contact > .icons {
     gap: 0px;
   }
 
-  footer .Contact>.Detail {
+  footer .Contact > .Detail {
     gap: 0px;
     margin-left: 20px;
   }
@@ -1946,11 +1913,11 @@ footer label textarea::placeholder {
     gap: 0px;
   }
 
-  .icons>a>i {
+  .icons > a > i {
     margin-bottom: 15px;
   }
 
-  .Detail>a {
+  .Detail > a {
     margin-bottom: 15px;
   }
 
@@ -1966,7 +1933,7 @@ footer label textarea::placeholder {
     padding-bottom: 30px;
   }
 
-  .ratethis>p {
+  .ratethis > p {
     font-size: 15px;
     text-align: center;
     margin-bottom: 0px;
