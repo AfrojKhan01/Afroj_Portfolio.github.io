@@ -106,7 +106,7 @@ header {
 
 /*----------------------------------------------------->Backgound Design<--------------------------------------------------------*/
 .bg {
-  background-image: url(./Images/5590457.jpg);
+  background-image: url(./Images/skull.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1560,6 +1560,7 @@ footer label textarea::placeholder {
     overflow-x: hidden;
   }
 
+
   header {
     padding: 0 20px;
     height: 80px;
@@ -1583,6 +1584,7 @@ footer label textarea::placeholder {
 
   section {
     padding: 0 10px;
+    margin-top: 80px;
   }
 
   section .left > .first-text {
@@ -1603,6 +1605,7 @@ footer label textarea::placeholder {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin-top: 0px;
   }
 
   section .left > .button1 > .bottom-text > p {
@@ -1610,11 +1613,16 @@ footer label textarea::placeholder {
     color: white;
     font-weight: 400;
     font-size: 25px;
+
   }
 
   #para {
     width: 350px;
     text-align: center;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 50px;
   }
 
   section .left > .button1 > .bottom-text > a {
