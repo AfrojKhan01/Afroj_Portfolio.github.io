@@ -794,152 +794,56 @@ section .left > .button1 > .bottom-text > a:hover {
   -ms-transform: translateX(200%);
   transform: translateX(200%);
 }
+/*----------------------------------------------------->section5<--------------------------------------------------------*/
 
 .Skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   padding: 0 200px;
 }
-
+.heading{
+  margin-right: 10px;
+}
 .heading > p {
   color: white;
-  text-align: center;
-  font-size: 15px;
-  width: 600px;
+  text-align: justify;
+  font-size: 16px;
+  width: 400px;
+  background: linear-gradient(to top, #5b5b5c, #000000fe);
+  font-weight: 500;
+  padding: 15px;
+  border-radius: 10px;
 }
-
-.Skills > .container {
+.heading > div{
+  color: white;
+  padding: 15px;
+  display: none;
+}
+.Skills .ImageContainer{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  gap: 50px;
-  margin-top: 30px;
+  justify-content: space-evenly;
 }
-
-.container .circle {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-}
-
-.container .circle::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border: 10px solid #09161b;
-  border-radius: 50%;
-}
-
-.container .circle::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background: #2f2e33;
-  border-radius: 50%;
-  border: 15px solid #4d4c51;
-  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.25),
-    0 10px 10px rgba(0, 0, 0, 0.75), 0 -2px 2px rgba(255, 255, 255, 0.5),
-    inset 0 4px 2px rgba(0, 0, 0, 0.25),
-    inset 0 -2px 2px rgba(255, 255, 255, 0.5);
-}
-
-.container .circle svg {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  transform: rotate(270deg);
-}
-.circles {
-  r: 70;
-  cx: 70;
-  cy: 70;
-}
-/* cx="70" cy="70" r="70" */
-.container .circle svg circle {
-  width: 100%;
-  height: 100%;
-  fill: transparent;
-  stroke-width: 8;
-  stroke: var(--clr);
-  stroke-linecap: round;
-  transform: translate(5px, 5px);
-  stroke-dasharray: 500;
-}
-.circle>div>img{
-  width: 80px;
-}
-
-
-#Html {
-  stroke-dashoffset: 00;
-}
-
-
-#CSS {
-  stroke-dashoffset: 00;
-}
-
-#JS {
-  stroke-dashoffset: 100;
-}
-
-#Java {
-  stroke-dashoffset: 100;
-}
-
-#Python {
-  stroke-dashoffset: 100;
-}
-
-#SQL {
-  stroke-dashoffset: 100;
-}
-
-#React {
-  stroke-dashoffset: 100;
-}
-
-#C {
-  stroke-dashoffset: 200;
-}
-
-#PHP {
-  stroke-dashoffset: 300;
-}
-
-#Tailwind {
-  stroke-dashoffset: 100;
-}
-
-.container div {
-  position: absolute;
-  text-align: center;
-  font-weight: 500;
-  color: #fff;
-  z-index: 1000;
-  color: var(--clr);
-  font-size: 20px;
+.Skills .ImageContainer>img{
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: #d8d3d3;
+  padding: 5px;
+  margin: 5px;
 }
 
 /*----------------------------------------------------->section5<--------------------------------------------------------*/
 .section5 {
   margin-top: 150px;
+  display: flex;
+  flex-direction: column;
 }
 
 .section5 > span {
-  margin-bottom: 40px;
+  color: cyan;
+  font-size: 45px;
 }
 
 .section5 > p {
@@ -1197,10 +1101,11 @@ footer label textarea::placeholder {
   .cross {
     display: none;
   }
+
 }
 
 /*================================================>Media Screen<=========================================*/
-@media screen and (min-width: 820px) and (max-width: 1120px) {
+@media screen and (min-width: 820px) and (max-width: 1140px) {
   .nav-logo > p {
     font-size: 25px;
   }
@@ -1320,8 +1225,14 @@ footer label textarea::placeholder {
   }
 
   .Skills {
-    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 130px;
   }
+  .heading > p {
+    width: 530px;
+  }
+  
 
   /*----------------------------------------------------->section5<--------------------------------------------------------*/
   .section5 {
@@ -1578,12 +1489,18 @@ footer label textarea::placeholder {
   }
 
   .Skills {
+    flex-direction: column;
     padding: 0 50px;
   }
-
-  .Skills > p {
-    width: 500px;
+  .heading > p {
+    width: 550px;
   }
+  
+  .Skills .ImageContainer>img{
+    width: 100px;
+    height: 100px;
+  }
+  
 
   /*----------------------------------------------------->section5<--------------------------------------------------------*/
   .section5 {
@@ -1818,47 +1735,26 @@ footer label textarea::placeholder {
   }
 
   .Skills {
-    padding: 0 10px;
+    flex-direction: column;
+    padding: 0 20px;
   }
-
   .heading > p {
-    width: 350px;
+    width: 90%;
+    display: none;
   }
+  
+  .Skills .ImageContainer>img{
+    width: 90px;
+    height: 90px;
+  }
+  .heading > div{
+    color: white;
+    padding: 15px;
+    display: block;
+    text-align: justify;
+  }
+  
 
-  .Skills > .container {
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    width: 100%;
-    height: 800px;
-    gap: 0px;
-    margin-top: 0px;
-  }
-
-  .container .circle {
-    width: 135px;
-    height: 135px;
-  }
-
-  .container .circle::after {
-    width: 80px;
-    height: 80px;
-  }
-
-  .container .circle svg {
-    width: 130px;
-    height: 130px;
-  }
-  .circles {
-    r: 60;
-    cx: 60;
-    cy: 60;
-  }
-  .container .circle svg circle {
-    transform: translate(5px, 5px);
-  }
-  .container div {
-    font-size: 15px;
-  }
 
   .section5 {
     margin-top: 100px;
