@@ -106,7 +106,7 @@ header {
 
 /*----------------------------------------------------->Backgound Design<--------------------------------------------------------*/
 .bg {
-  background-image: url(./Images/skull.jpg);
+  background-image: url(Images/bcg3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -118,8 +118,8 @@ header {
 }
 
 .bg-2 {
-  backdrop-filter: brightness(0.3);
-  -webkit-backdrop-filter: brightness(0.3);
+  backdrop-filter: brightness(0.1);
+  -webkit-backdrop-filter: brightness(0.1);
   height: 100vh;
   width: 100%;
 }
@@ -225,32 +225,16 @@ body::-webkit-scrollbar {
 
 /*----------------------------------------------------->Section1<--------------------------------------------------------*/
 section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   margin-top: 100px;
 }
-
 section .left {
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -261,17 +245,15 @@ section .left > .first-text {
 
 section .left > .line {
   border: 2px solid;
-  width: 600px;
-  -webkit-box-shadow: 0px 5px 30px cyan;
-  box-shadow: 0px 5px 30px cyan;
+  width: 630px;
+  box-shadow: 1px 1px 10px cyan;
   color: cyan;
   border-radius: 5px;
 }
 
 section .left > h1 {
   font-size: 100px;
-  margin-top: 0px;
-  margin-bottom: 10px;
+  margin: 0px;
   color: rgb(255, 255, 255);
 }
 
@@ -282,16 +264,10 @@ section .left > .button1 > p {
 }
 
 section .left > .button1 > .bottom-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 section .left > .button1 > .bottom-text > a {
