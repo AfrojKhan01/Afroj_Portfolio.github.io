@@ -95,18 +95,15 @@ header {
 
 .nav-text > li > a:hover,
 .nav-text > li > a.active {
-  color: #03080a;
-  background-color: cyan;
-  text-shadow: 2px 2px 15px cyan;
+  background-color: #c4c3c336;
+  text-shadow: 1px 1px 10px rgb(144, 0, 255);
   font-weight: 500;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 /*----------------------------------------------------->Backgound Design<--------------------------------------------------------*/
 .bg {
-  background-image: url(Images/bcg3.jpg);
+  background-image: url(Images/1350469.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -118,8 +115,8 @@ header {
 }
 
 .bg-2 {
-  backdrop-filter: brightness(0.1);
-  -webkit-backdrop-filter: brightness(0.1);
+  backdrop-filter: brightness(0.2);
+  -webkit-backdrop-filter: brightness(0.2);
   height: 100vh;
   width: 100%;
 }
@@ -246,8 +243,6 @@ section .left > .first-text {
 section .left > .line {
   border: 2px solid;
   width: 630px;
-  box-shadow: 1px 1px 10px cyan;
-  color: cyan;
   border-radius: 5px;
 }
 
@@ -291,12 +286,9 @@ section .left > .button1 > .bottom-text > p {
 }
 
 section .left > .button1 > .bottom-text > a:hover {
-  background-color: cyan;
-  -webkit-box-shadow: 1px 1px 10px cyan;
-  box-shadow: 1px 1px 10px cyan;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  background-color: #9b9b9b42;
+  color: white;
+  transition: all 0.3s;
 }
 
 /*----------------------------------------------------->Section3<--------------------------------------------------------*/
