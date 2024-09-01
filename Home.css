@@ -1303,17 +1303,10 @@ footer label textarea::placeholder {
     letter-spacing: 2px;
   }
 
-  .nav-text > li a:hover {
-    -webkit-transform: scale(2);
-    -ms-transform: scale(2);
-    transform: scale(2);
-    background-color: cyan;
-    -webkit-box-shadow: 2px 2px 20px cyan;
-    box-shadow: 2px 2px 20px cyan;
-    color: white;
-    -webkit-transition: all ease-in-out 0.3s;
-    -o-transition: all ease-in-out 0.3s;
-    transition: all ease-in-out 0.3s;
+  .nav-text > li a:hover,
+  .nav-text > li > a.active {
+   text-shadow: none;
+   color: white;
   }
 
   header > button {
