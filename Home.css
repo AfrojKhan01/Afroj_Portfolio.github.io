@@ -1073,20 +1073,12 @@ footer label textarea::placeholder {
 }
 
 /*================================================>Media Screen<=========================================*/
-@media screen and (min-width: 820px) and (max-width: 1140px) {
-  .nav-logo > p {
-    font-size: 25px;
-  }
+@media screen and (min-width: 1050px) and (max-width: 1440px) {
 
   .nav-text {
     gap: 40px;
   }
 
-  header > button {
-    width: 100px;
-    height: 45px;
-    font-size: 15px;
-  }
 
   .menu-icon {
     display: none;
@@ -1227,16 +1219,13 @@ footer label textarea::placeholder {
 }
 
 /*================================================>Media Screen<=========================================*/
-@media screen and (max-width: 820px) {
+@media screen and (min-width: 820px) and (max-width: 1050px) {
   .Movetotop {
     width: 40px;
     height: 40px;
     font-size: 18px;
   }
 
-  .nav-logo > p {
-    font-size: 25px;
-  }
 
   .nav-text {
     position: absolute;
@@ -1309,9 +1298,6 @@ footer label textarea::placeholder {
    color: white;
   }
 
-  header > button {
-    display: none;
-  }
 
   .menu-icon {
     font-size: 30px;
@@ -1328,9 +1314,12 @@ footer label textarea::placeholder {
     color: white;
   }
 
+  .bg {
+    height: 100vh;
+  }
   /*----------------------------------------------------->Section1<--------------------------------------------------------*/
   section {
-    margin-top: 100px;
+    margin-top: 70px;
   }
 
   section .left {
