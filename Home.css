@@ -1219,7 +1219,7 @@ footer label textarea::placeholder {
 }
 
 /*================================================>Media Screen<=========================================*/
-@media screen and (min-width: 820px) and (max-width: 1050px) {
+@media screen and (max-width: 1050px) {
   .Movetotop {
     width: 40px;
     height: 40px;
@@ -1312,10 +1312,6 @@ footer label textarea::placeholder {
     z-index: 1;
     display: none;
     color: white;
-  }
-
-  .bg {
-    height: 100vh;
   }
   /*----------------------------------------------------->Section1<--------------------------------------------------------*/
   section {
