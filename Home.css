@@ -16,11 +16,7 @@ body {
   height: 40px;
   background-color: rgb(255, 255, 255);
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   color: black;
   border-radius: 50%;
@@ -29,29 +25,19 @@ body {
   right: 20px;
   font-size: 18px;
   display: none;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
   transition: all 0.4s;
   z-index: 20000;
   text-decoration: none;
 }
 
 .Movetotop.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
-/*----------------------------------------------------->Header<--------------------------------------------------------*/
+
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   height: 100px;
   padding: 0px 40px;
@@ -66,14 +52,8 @@ header {
 }
 
 .nav-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   gap: 80px;
 }
