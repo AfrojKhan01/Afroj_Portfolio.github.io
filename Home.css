@@ -47,7 +47,7 @@ header {
 }
 
 .nav-logo > img {
-  width: 100px;
+  width: 80px;
   cursor: pointer;
 }
 
@@ -110,18 +110,9 @@ header {
 
 /*----------------------------------------------------->Heading<--------------------------------------------------------*/
 .heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   margin-top: 50px;
 }
@@ -329,39 +320,22 @@ section .left > .button1 > .bottom-text > a:hover {
 
 /*----------------------------------------------------->section4<--------------------------------------------------------*/
 .section4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 100px;
 }
 
 .section4 > .im {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 50px;
   gap: 50px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .section4 > .im > .images {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   height: 450px;
   width: 280px;
@@ -374,12 +348,7 @@ section .left > .button1 > .bottom-text > a:hover {
 }
 
 .images > .sub-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   width: 280px;
   height: 300px;
@@ -387,7 +356,6 @@ section .left > .button1 > .bottom-text > a:hover {
   border: 1px solid #ccc;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  -webkit-box-shadow: 2px 2px 5px grey;
   box-shadow: 2px 2px 5px grey;
 }
 
@@ -511,18 +479,9 @@ section .left > .button1 > .bottom-text > a:hover {
 
 .maincontainer .data-container {
   background: linear-gradient(to top, #000000, #141414);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding: 0 40px;
   height: 100%;
@@ -541,12 +500,7 @@ section .left > .button1 > .bottom-text > a:hover {
 }
 
 .edu-data {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -591,7 +545,6 @@ section .left > .button1 > .bottom-text > a:hover {
 
 .maincontainer.active .Experience {
   -webkit-transform: translateX(100%);
-  -ms-transform: translateX(100%);
   transform: translateX(100%);
 }
 
@@ -603,12 +556,9 @@ section .left > .button1 > .bottom-text > a:hover {
 }
 
 .maincontainer.active .Education {
-  -webkit-transform: translateX(85%);
-  -ms-transform: translateX(85%);
   transform: translateX(85%);
   opacity: 1;
   z-index: 5;
-  -webkit-animation: move 0.6s;
   animation: move 0.6s;
 }
 
@@ -647,16 +597,12 @@ section .left > .button1 > .bottom-text > a:hover {
   width: 50%;
   height: 100%;
   overflow: hidden;
-  -webkit-transition: all 0.6s ease-in-out;
-  -o-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
   z-index: 1000;
   border-radius: 150px 0 0 100px;
 }
 
 .maincontainer.active .toggle-container {
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
   transform: translateX(-100%);
   border-radius: 0 150px 100px 0;
 }
@@ -669,11 +615,7 @@ section .left > .button1 > .bottom-text > a:hover {
   left: -100%;
   height: 100%;
   width: 200%;
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
   transform: translateX(0);
-  -webkit-transition: all 0.6s ease-in-out;
-  -o-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
 
@@ -682,8 +624,6 @@ section .left > .button1 > .bottom-text > a:hover {
 }
 
 .maincontainer.active .toggle {
-  -webkit-transform: translateX(50%);
-  -ms-transform: translateX(50%);
   transform: translateX(50%);
 }
 
@@ -691,27 +631,14 @@ section .left > .button1 > .bottom-text > a:hover {
   position: absolute;
   width: 50%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding: 0 10px;
   text-align: center;
   top: 0;
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
   transform: translateX(0);
-  -webkit-transition: all 0.6s ease-in-out;
-  -o-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
 
@@ -720,27 +647,19 @@ section .left > .button1 > .bottom-text > a:hover {
 }
 
 .togggle-left {
-  -webkit-transform: translateX(-200%);
-  -ms-transform: translateX(-200%);
   transform: translateX(-200%);
 }
 
 .maincontainer.active .togggle-left {
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
 .togggle-right {
   right: 0;
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
 .maincontainer.active .togggle-right {
-  -webkit-transform: translateX(200%);
-  -ms-transform: translateX(200%);
   transform: translateX(200%);
 }
 /*----------------------------------------------------->section5<--------------------------------------------------------*/
@@ -810,14 +729,8 @@ footer {
   margin-top: 100px;
   height: 350px;
   background: linear-gradient(to top, #000000, #013335);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0 200px 0 100px;
   position: relative;
@@ -845,24 +758,15 @@ footer .left > p {
 }
 
 footer .left > .Social {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 30px;
   font-size: 40px;
 }
 
 footer .right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   height: 300px;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   font-size: 20px;
 }
@@ -873,39 +777,23 @@ footer .right > span {
 }
 
 footer .Contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
 
 footer .Contact > .icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   gap: 20px;
 }
 
 footer .Contact > .Detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   gap: 20px;
 }
@@ -916,11 +804,7 @@ footer a {
 }
 
 footer label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   gap: 10px;
 }
@@ -968,13 +852,8 @@ footer label textarea::placeholder {
 .ratethis {
   color: white;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-line-pack: center;
   align-content: center;
 }
 
@@ -985,9 +864,7 @@ footer label textarea::placeholder {
 }
 
 .ratethis label input {
-  -moz-appearance: none;
   appearance: none;
-  -webkit-appearance: none;
   cursor: pointer;
 }
 .last-icons{
@@ -1004,17 +881,11 @@ footer label textarea::placeholder {
   font-size: 16px;
   border-radius: 50%;
   cursor: pointer;
-  -webkit-box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
-    2px 2px 6px rgba(0, 0, 0, 0, 0.8);
   box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
     2px 2px 6px rgba(0, 0, 0, 0, 0.8);
 }
 
 .ratethis label .fa:hover {
-  -webkit-box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
-    2px 2px 6px rgba(0, 0, 0, 0, 0.8),
-    inset -2px -2px 10px rgba(255, 255, 255, 0.05),
-    inset 2px 2px 10px rgba(0, 0, 0, 0.5);
   box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
     2px 2px 6px rgba(0, 0, 0, 0, 0.8),
     inset -2px -2px 10px rgba(255, 255, 255, 0.05),
@@ -1023,8 +894,6 @@ footer label textarea::placeholder {
 
 .ratethis label input:checked ~ .fa {
   color: cyan;
-  -webkit-box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1),
-    inset 2px 2px 6px rgba(0, 0, 0, 0, 0.8);
   box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1),
     inset 2px 2px 6px rgba(0, 0, 0, 0, 0.8);
 }
@@ -1034,11 +903,10 @@ footer label textarea::placeholder {
 @media (max-width: 1025px) {
 
   .bg {
-    background-image: url(Images/1350469.png);
-    height: 600px;
+    height: 650px;
   }
   .bg-2 {
-    height: 600px;
+    height: 650px;
   }
 
   .nav-text {
@@ -1048,7 +916,7 @@ footer label textarea::placeholder {
     font-size: 15px;
   }
   .nav-logo > img {
-    width: 90px;
+    width: 70px;
   }
   section {
     margin-top: 50px;
@@ -1488,8 +1356,7 @@ footer label textarea::placeholder {
   }
 
   .nav-logo > img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
   }
 
   .nav-text {
@@ -1737,6 +1604,9 @@ footer label textarea::placeholder {
   footer .Contact > .Detail {
     gap: 0px;
     margin-left: 20px;
+  }
+  footer .left > .footer-logo>img {
+    width: 80px;
   }
 
   footer label {
