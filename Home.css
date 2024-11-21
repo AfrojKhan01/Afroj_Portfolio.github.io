@@ -47,7 +47,7 @@ header {
 }
 
 .nav-logo > img {
-  width: 120px;
+  width: 100px;
   cursor: pointer;
 }
 
@@ -826,7 +826,7 @@ footer {
 }
 
 footer .left > .footer-logo>img {
-  width: 120px;
+  width: 100px;
 }
 
 footer .left {
@@ -1031,7 +1031,13 @@ footer label textarea::placeholder {
 
 
 /*================================================>Media Screen<=========================================*/
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
+
+  .bg {
+    background-image: url(Images/1350469.png);
+    height: 600px;
+  }
+  
 
   .nav-text {
     gap: 30px;
@@ -1040,7 +1046,7 @@ footer label textarea::placeholder {
     font-size: 15px;
   }
   .nav-logo > img {
-    width: 100px;
+    width: 90px;
   }
   section {
     margin-top: 50px;
@@ -1166,6 +1172,9 @@ footer label textarea::placeholder {
     gap: 50px;
   }
 
+  footer > .left{
+    margin-top: 20px;
+  }
   footer > .left > p {
     font-size: 20px;
   }
@@ -1177,6 +1186,7 @@ footer label textarea::placeholder {
   footer .right > .Contact {
     font-size: 18px;
   }
+
 }
 
 
