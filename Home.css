@@ -1037,7 +1037,9 @@ footer label textarea::placeholder {
     background-image: url(Images/1350469.png);
     height: 600px;
   }
-  
+  .bg-2 {
+    height: 600px;
+  }
 
   .nav-text {
     gap: 30px;
