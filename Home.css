@@ -1067,7 +1067,12 @@ footer label textarea::placeholder {
     height: 40px;
     font-size: 18px;
   }
-
+  .bg {
+    height: 100vh;
+  }
+  .bg-2 {
+    height: 100vh;
+  }
 
   .nav-text {
     position: absolute;
