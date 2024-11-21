@@ -100,7 +100,3 @@ window.onload = function() {
       imageElement.addEventListener('mouseleave', handleMouseLeave);
     });
   }
-
-  
-
-  

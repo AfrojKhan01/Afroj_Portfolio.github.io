@@ -61,8 +61,7 @@ header {
 }
 
 .nav-logo > img {
-  width: 60px;
-  height: 60px;
+  width: 120px;
   cursor: pointer;
 }
 
@@ -99,6 +98,14 @@ header {
   text-shadow: 1px 1px 10px rgb(144, 0, 255);
   font-weight: 500;
   transition: all 0.3s ease-in-out;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.cross {
+  display: none;
 }
 
 /*----------------------------------------------------->Backgound Design<--------------------------------------------------------*/
@@ -296,7 +303,7 @@ section .left > .button1 > .bottom-text > a:hover {
 .section3 {
   margin: 50px;
   display: flex;
-  gap: 150px;
+  gap: 50px;
   flex-wrap: wrap;
 }
 
@@ -479,7 +486,7 @@ section .left > .button1 > .bottom-text > a:hover {
 }
 
 .maincontainer {
-  background: linear-gradient(to top, #000000, #807d7d);
+  background: linear-gradient(to top, #000000, #141414);
   border-radius: 30px;
   position: relative;
   overflow: hidden;
@@ -499,7 +506,7 @@ section .left > .button1 > .bottom-text > a:hover {
 }
 
 .maincontainer button {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 18px;
   padding: 10px 15px;
   border-radius: 10px;
@@ -512,18 +519,18 @@ section .left > .button1 > .bottom-text > a:hover {
 }
 
 .maincontainer button.hidden {
-  background-color: #000000;
-  -webkit-box-shadow: 1px 5px 10px black;
+  background-color: #ffffff;
   box-shadow: 1px 5px 10px black;
 }
 
 .maincontainer button.hidden:hover {
   background-color: transparent;
+  color: white;
   border: 1px solid white;
 }
 
 .maincontainer .data-container {
-  background: linear-gradient(to top, #000000, #807d7d);
+  background: linear-gradient(to top, #000000, #141414);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,18 +552,12 @@ section .left > .button1 > .bottom-text > a:hover {
   position: absolute;
   top: 0;
   height: 100%;
-  -webkit-transition: all 0.6s ease-in-out;
-  -o-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
 
 .data-container h1 {
-  background-color: white;
   font-size: 40px;
-  box-shadow: 0px 5px 5px grey;
-  color: rgb(0, 0, 0);
-  border-radius: 15px;
-  padding: 5px 20px;
+  color: rgb(255, 255, 255);
 }
 
 .edu-data {
@@ -683,7 +684,7 @@ section .left > .button1 > .bottom-text > a:hover {
 .toggle {
   color: white;
   height: 100%;
-  background: linear-gradient(to right, #000000, #26010d);
+  background: linear-gradient(to right, #000000, #000000);
   position: relative;
   left: -100%;
   height: 100%;
@@ -776,7 +777,7 @@ section .left > .button1 > .bottom-text > a:hover {
   text-align: justify;
   font-size: 16px;
   width: 400px;
-  background: linear-gradient(to top, #5b5b5c, #000000fe);
+  background: linear-gradient(to top, #0f0f0f, #000000fe);
   font-weight: 500;
   padding: 15px;
   border-radius: 10px;
@@ -844,21 +845,8 @@ footer {
   color: #ccc;
 }
 
-footer .left > .footer-logo {
-  color: #ccc;
-  width: 70px;
-  height: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 50%;
-  box-shadow: 5px 5px 10px black;
+footer .left > .footer-logo>img {
+  width: 120px;
 }
 
 footer .left {
@@ -1061,51 +1049,37 @@ footer label textarea::placeholder {
     inset 2px 2px 6px rgba(0, 0, 0, 0, 0.8);
 }
 
-@media screen and (min-width: 1440px) {
-  .menu-icon {
-    display: none;
-  }
-
-  .cross {
-    display: none;
-  }
-
-}
 
 /*================================================>Media Screen<=========================================*/
-@media screen and (min-width: 1050px) and (max-width: 1440px) {
+@media (max-width: 1024px) {
 
   .nav-text {
-    gap: 40px;
+    gap: 30px;
   }
-
-
-  .menu-icon {
-    display: none;
+  .nav-text>li>a{
+    font-size: 15px;
   }
-
-  .cross {
-    display: none;
+  .nav-logo > img {
+    width: 100px;
   }
-
-  .maincontainer {
-    margin: 100px 10px;
+  section {
+    margin-top: 50px;
   }
 
   /*----------------------------------------------------->section4<--------------------------------------------------------*/
   .section4 {
-    margin-top: 50px;
+    margin-top: 0px;
   }
 
+  
   .maincontainer {
-    height: 1000px;
-    margin: 100px 50px;
+    height: 900px;
+    margin: 50px 100px;
     padding: 30px 0;
   }
 
   .data-container h1 {
     font-size: 35px;
-    text-decoration: underline;
   }
 
   .edu-data p {
@@ -1184,22 +1158,29 @@ footer label textarea::placeholder {
     transform: translateY(200%);
   }
 
+  .heading{
+    margin-right: 0px;
+  }
+  .heading > p {
+    width: 700px;
+  }
   .Skills {
     display: flex;
     flex-direction: column;
     padding: 0 130px;
   }
-  .heading > p {
-    width: 530px;
+  .Skills .ImageContainer>img{
+    width: 100px;
+    height: 100px;
   }
-  
 
-  /*----------------------------------------------------->section5<--------------------------------------------------------*/
+
+
   .section5 {
     margin-top: 100px;
   }
 
-  /*----------------------------------------------------->Footer<--------------------------------------------------------*/
+
   footer {
     padding: 0 50px;
     gap: 50px;
@@ -1218,8 +1199,9 @@ footer label textarea::placeholder {
   }
 }
 
-/*================================================>Media Screen<=========================================*/
-@media screen and (max-width: 1050px) {
+
+
+@media (max-width: 768px) {
   .Movetotop {
     width: 40px;
     height: 40px;
@@ -1304,6 +1286,7 @@ footer label textarea::placeholder {
     cursor: pointer;
     z-index: 1;
     color: white;
+    display: block;
   }
 
   .cross {
@@ -1501,7 +1484,7 @@ footer label textarea::placeholder {
 }
 
 /*================================================>Media Screen<=========================================*/
-@media screen and (max-width: 600px) {
+@media (max-width: 426px) {
   body {
     overflow-x: hidden;
   }
